@@ -1,0 +1,78 @@
+*,
+*: after,
+*: before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: #404041;
+  height: 8rem;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+h1 span {
+  color:  #ED458B;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #E6E7E8;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  color: red;
+}
+
+.feedBackNumber {
+  font-size: 5rem;
+  color: #ED458B;
+}
+
+.inputs {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 1.75rem;
+  line-height: 1rem;
+  padding: 0.45rem;
+  width: 18rem;
+}
+
+.buttonsDiv {
+
+}
+
+.buttons {
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background: #929497;
+  margin: 2rem 0.50rem;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  width: 9rem;
+}
+
+.buttons:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #70d934);
+  box-shadow: 30px 30px 15px #666666;
+  text-decoration: none;
+}
+
+.resetButton {
+  width: 20rem;
+}

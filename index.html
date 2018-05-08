@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Best Number Guesser</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <section>
+    <header>
+      <h1>Number <span>Guesser</span></h1>
+    </header>
+        <h4 id ="instruction">Make a guess between 1 and 100</h4>
+
+          <div id="previousUserGuess" class="numberBox feedBackNumber"></div>
+
+          <div id="js-message" class="message"></div>
+
+            <input type="number" id="numberGuess" class="inputs" placeholder="Enter Guess" onkeyup="enableBtn()" />
+
+            <input type="button" value="Guess" class="guess buttons" />
+
+            <input type="button" value="Clear" class="clear buttons" onClick="clearNumber()" disabled />
+
+            <input type="button" value="Reset" class="reset buttons" onclick="resetNumber()" disabled />
+
+        <h4 class="userMakesNumbers">To make game more exciting please specify your own minimum and maximum numbers</h4>
+
+            <input type="number" id="userMinNumber" class="inputs" placeholder="Input min number" onkeyup="enableBtn()" />
+
+            <input type="number" id="userMaxNumber" class="inputs" placeholder="Input max number" onkeyup="enableBtn()" />
+
+            <input type="button" class="inputs buttons" value="Submit" class="userNumbers" onClick="submitUserNumbers()" />
+
+    </section>
+
+  
+  <article class="instructions"></article>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
