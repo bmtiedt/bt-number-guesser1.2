@@ -21,19 +21,19 @@
 
             <input type="number" id="numberGuess" class="inputs" placeholder="Enter Guess" onkeyup="enableBtn()" />
 
-            <input type="button" value="Guess" class="guess buttons" />
+            <input type="button" value="Guess" class="guess clear buttons" disabled="true" />
 
-            <input type="button" value="Clear" class="clear buttons" onClick="clearNumber()" disabled />
+            <input type="button" value="Clear" class="clear buttons" onclick="clearNumber()" disabled="true" />
 
-            <input type="button" value="Reset" class="reset buttons" onclick="resetNumber()" disabled />
+            <input type="button" value="Reset" class="reset buttons" onclick="resetNumber()" disabled="true" />
 
         <h4 class="userMakesNumbers">To make game more exciting please specify your own minimum and maximum numbers</h4>
 
-            <input type="number" id="userMinNumber" class="inputs" placeholder="Input min number" onkeyup="enableBtn()" />
+            <input type="number" id="userMinNumber" class="inputs" placeholder="Input min number"/>
 
-            <input type="number" id="userMaxNumber" class="inputs" placeholder="Input max number" onkeyup="enableBtn()" />
+            <input type="number" id="userMaxNumber" class="inputs" placeholder="Input max number"/>
 
-            <input type="button" class="inputs buttons" value="Submit" class="userNumbers" onClick="submitUserNumbers()" />
+            <input type="button" value="Submit" class="inputs clear buttons userNumbersButton" onclick="submitUserNumbers()" disabled="true" />
 
     </section>
 

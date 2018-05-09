@@ -4,17 +4,6 @@ var min = parseInt(document.getElementById('userMinNumber').value) || 1;
 var max = parseInt(document.getElementById('userMaxNumber').value) || 100;
 var randomNumber = generateRandomNumber();
 
-// window.addEventListener("keydown", keydownHandler, false);
-
-// function keydownHandler(event) {
-//   if(event.keyCode === 13) {
-//     submitGuess();
-//   }
-// }
-// function clickHandler() {
-//   submitGuess();
-// }
-
 function generateRandomNumber() {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -30,16 +19,11 @@ function increaseRange(n) {
   max = max + n;
 }
 
-// while(min == max) {
-//   max = parseInt(prompt('Enter a diffrent number'));
-//   console.log(min, max);
-// }
-
-
 function submitGuess() {
   document.querySelector('.reset').disabled = false;
   document.getElementById('instruction').innerText = 'Your previous guess was...';
   if (parseInt(randomGuess.value) === randomNumber) {
+    increaseRange(10);
     randomNumber = generateRandomNumber();
     return document.getElementById('js-message').innerText = 'You are brilliant!';
   }
@@ -79,7 +63,6 @@ function resetNumber() {
   document.getElementById('userMaxNumber').value = '';
   min = parseInt(document.getElementById('userMinNumber').value) || 1;
   max = parseInt(document.getElementById('userMaxNumber').value) || 100;
-  console.log(min, max);
   generateRandomNumber();
 }
 
@@ -93,7 +76,7 @@ function submitUserNumbers() {
     return document.getElementById('js-message').innerText = 'Not a valid range';
   }
   enableBtn();
-  generateRandomNumber();
+  randomNumber = generateRandomNumber();
 }
 
 //enable clear & reset buttons when numbers are input

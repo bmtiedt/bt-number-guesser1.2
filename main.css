@@ -33,7 +33,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
+h {
   color: red;
 }
 
@@ -48,6 +48,7 @@ h3 {
   line-height: 1rem;
   padding: 0.45rem;
   width: 18rem;
+  box-shadow: 30px 30px 15px #666666;
 }
 
 .buttonsDiv {
@@ -64,6 +65,7 @@ h3 {
   padding: 10px 30px 10px 30px;
   text-decoration: none;
   width: 9rem;
+  box-shadow: 15px 30px 30px #666666;
 }
 
 .buttons:hover {
