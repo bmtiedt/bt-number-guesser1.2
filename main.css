@@ -11,6 +11,7 @@ body {
 
 header {
   background-color: #404041;
+  border: 0.5rem solid #ED458B;
   height: 8rem;
   margin: auto;
   text-align: center;
@@ -18,54 +19,50 @@ header {
 
 h1 {
   font-size: 3rem;
-  padding: 2rem;
+  text-shadow: 30px 30px 5px black;
 }
 
 h1 span {
   color:  #ED458B;
-  font-weight: 700;
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-shadow: 30px 30px 5px black;
 }
 
 h1 {
   color: #E6E7E8;
-  font-weight: 100;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 
-h {
-  color: red;
+.words {
+  padding-top: 3rem;
 }
 
 .feedBackNumber {
-  font-size: 5rem;
   color: #ED458B;
+  font-size: 5rem;
 }
 
 .inputs {
-  /* font-family: 'Montserrat', sans-serif; */
+  box-shadow: 30px 30px 15px #666666;
   font-size: 1.75rem;
   line-height: 1rem;
   padding: 0.45rem;
   width: 18rem;
-  box-shadow: 30px 30px 15px #666666;
-}
-
-.buttonsDiv {
-
 }
 
 .buttons {
-  border-radius: 25px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
   background: #929497;
+  border-radius: 25px;
+  box-shadow: 15px 30px 30px #666666;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   margin: 2rem 0.50rem;
   padding: 10px 30px 10px 30px;
   text-decoration: none;
   width: 9rem;
-  box-shadow: 15px 30px 30px #666666;
 }
 
 .buttons:hover {
@@ -75,6 +72,7 @@ h {
   text-decoration: none;
 }
 
-.resetButton {
-  width: 20rem;
+.playerRange {
+  background-color: #ED458B;
+  border: 0.5rem solid #404041;
 }

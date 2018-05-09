@@ -3,43 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Best Number Guesser</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
   <section>
     <header>
       <h1>Number <span>Guesser</span></h1>
-    </header>
-        <h4 id ="instruction">Make a guess between 1 and 100</h4>
-
-          <div id="previousUserGuess" class="numberBox feedBackNumber"></div>
-
-          <div id="js-message" class="message"></div>
-
-            <input type="number" id="numberGuess" class="inputs" placeholder="Enter Guess" onkeyup="enableBtn()" />
-
-            <input type="button" value="Guess" class="guess clear buttons" disabled="true" />
-
-            <input type="button" value="Clear" class="clear buttons" onclick="clearNumber()" disabled="true" />
-
-            <input type="button" value="Reset" class="reset buttons" onclick="resetNumber()" disabled="true" />
-
-        <h4 class="userMakesNumbers">To make game more exciting please specify your own minimum and maximum numbers</h4>
-
-            <input type="number" id="userMinNumber" class="inputs" placeholder="Input min number"/>
-
-            <input type="number" id="userMaxNumber" class="inputs" placeholder="Input max number"/>
-
-            <input type="button" value="Submit" class="inputs clear buttons userNumbersButton" onclick="submitUserNumbers()" disabled="true" />
-
+      <h4 id ="instruction" class="words" >Guess the random number 1 and 100</h4>
+        <div id="previousUserGuess" class="feedBackNumber"></div>
+        <div id="js-message" class="message"></div>
+        <input type="number" id="numberGuess" class="guessButton inputs" placeholder="Your best guess" onkeyup="enableBtn()" />
+        <input type="button" value="Guess" class="guess buttons" />
+        <input type="button" value="Clear" class="clear buttons" onclick="clearNumber()" disabled />
+        <input type="button" value="Reset" class="reset buttons" onclick="resetNumber()" disabled />
+      <div class="playerRange">
+        <h4 class="userMakesNumbers">Set your own range, specify your own minimum and maximum numbers</h4>
+        <input type="number" class="inputs" id="userMinNumber" placeholder="your min number" onkeyup="enableBtn()" />
+        <input type="number" class="inputs" id="userMaxNumber" placeholder="your max number" onkeyup="enableBtn()" />
+        <input type="button" value="Submit" class="userNumbers buttons" onclick="submitUserNumbers()" />
+      </div>
     </section>
-
-  
-  <article class="instructions"></article>
-
 <script src="main.js"></script>
 </body>
 </html>

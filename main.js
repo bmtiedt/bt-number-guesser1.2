@@ -14,18 +14,12 @@ guessButton.addEventListener('click', function() {
   submitGuess();
 });
 
-function increaseRange(n) {
-  min = min - n;
-  max = max + n;
-}
-
 function submitGuess() {
   document.querySelector('.reset').disabled = false;
   document.getElementById('instruction').innerText = 'Your previous guess was...';
-  if (parseInt(randomGuess.value) === randomNumber) {
-    increaseRange(10);
+  if (parseInt(randomGuess.value) === randomNumber) {   
     randomNumber = generateRandomNumber();
-    return document.getElementById('js-message').innerText = 'You are brilliant!';
+    return document.getElementById('js-message').innerText = 'Oh SNAP!!!!';
   }
   if (parseInt(randomGuess.value) < min || parseInt(randomGuess.value) > max || isNaN(parseInt(randomGuess.value))) {
     document.getElementById('instruction').innerText = 'This number is not within range';
@@ -41,12 +35,10 @@ function submitGuess() {
   }
 };
 
-//clear button function
 function clearNumber() {
   document.getElementById('numberGuess').value = '';
 }
 
-//fields cleared with both the submitUserNumbers and reset buttons
 function clearFields() {
   document.getElementById('js-message').innerText = '';
   document.getElementById('numberGuess').value = '';
@@ -55,7 +47,6 @@ function clearFields() {
   document.querySelector('.reset').disabled = true;
 }
 
-//reset button function: clear number, make new randomNumber, clear js-message
 function resetNumber() {
   document.getElementById('instruction').innerText = 'Make a guess between 1 and 100';
   clearFields();
@@ -66,7 +57,7 @@ function resetNumber() {
   generateRandomNumber();
 }
 
-//store user interval range
+//PLAYERS RANGE
 function submitUserNumbers() {
   document.getElementById('instruction').innerText = 'Make a guess between your selected numbers';
   clearFields();
@@ -79,7 +70,7 @@ function submitUserNumbers() {
   randomNumber = generateRandomNumber();
 }
 
-//enable clear & reset buttons when numbers are input
+//ENABLE VREAL AND RESET BUTTON WITH INPUT
 function enableBtn() {
   document.getElementById('numberGuess').value != '';
   document.querySelector('.clear').disabled = false;
